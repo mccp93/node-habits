@@ -1,0 +1,63 @@
+body {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+#site-header .navbar{
+    border-radius: 0;
+    border: none;
+    margin: 0;
+}
+
+.view-btn{
+    text-align: center;
+    margin: auto;
+}
+
+#site-main {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+#site-footer {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-size: 12px;
+    background-color: #222;
+    color: #999;
+}
+
+.habit-square {
+    width: 200;
+    height: 100;
+}
+
+#Meditation {
+  background: greenyellow;
+  border: 1px solid black;
+}
+
+#Running {
+  background: cornflowerblue;
+  border: 1px solid black;
+  
+}
+
+#Journal{
+  background: mediumpurple;
+  border: 1px solid black;
+}
+
+.name{
+    text-align: center;
+}
+
+
+.square {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+}

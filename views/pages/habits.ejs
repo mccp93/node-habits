@@ -1,0 +1,27 @@
+<div class="jumbotron text-center">
+    <h1> My Habits </h1>
+</div>
+
+
+<table class="table table-bordered table-hover table-striped">
+    <thead>
+        <tr>
+            <th> Key </th>
+            <th> Habit </th>
+            <th> Description </th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var habit of habits) { %>
+            <tr>
+                <td class="square" id="<%= habit.name %>"> </td>
+                <td class="name"> <strong> <%= habit.name %> </strong> </td>
+                <td class="desc"> <%= habit.description %> </td>
+                <td class="view-btn"> <a href="/habits/<%= habit.slug %>" class="btn btn-sm btn-primary"> View More </a> </td>
+            </tr>
+        <% } %>
+    </tbody>
+</table>
+
+
