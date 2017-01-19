@@ -10,15 +10,17 @@
             <th> Habit </th>
             <th> Description </th>
             <th> </th>
+            <th> </th>
         </tr>
     </thead>
     <tbody>
         <% for(var habit of habits) { %>
             <tr>
-                <td class="square" id="<%= habit.name %>"> </td>
+                <td class="square-single" id="<%= habit.name %>"> </td>
                 <td class="name"> <strong> <%= habit.name %> </strong> </td>
                 <td class="desc"> <%= habit.description %> </td>
-                <td class="view-btn"> <a href="/habits/<%= habit.slug %>" class="btn btn-sm btn-primary"> View More </a> </td>
+                <td class="view-btn"> <a href="/habits/<%= habit.slug %>" class="btn btn-xs btn-primary"> View More </a> </td>
+                <td class="view-btn"> <a href="/habits/<%= habit.slug %>/edit" class="btn btn-xs btn-primary"> Edit </a> </td>
             </tr>
         <% } %>
     </tbody>

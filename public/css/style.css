@@ -28,10 +28,6 @@ body {
     color: #999;
 }
 
-.habit-square {
-    width: 200;
-    height: 100;
-}
 
 #Meditation {
   background: greenyellow;
@@ -45,19 +41,47 @@ body {
 }
 
 #Journal{
-  background: mediumpurple;
-  border: 1px solid black;
+    background: mediumpurple;
+    border: 1px solid black;
 }
 
 .name{
     text-align: center;
 }
 
+.square-container{
+    width: 19%;
+    margin: 0 auto;
+}
 
-.square {
+.square{
+    width: 20px;
+    height: 20px;
+    display: block-inline;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    background: lightgrey;
+    border: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.square-single {
     width: 20px;
     height: 20px;
     display: block;
     margin: auto;
     margin-top: 5px;
+}
+
+.square-false{
+    width: 20px;
+    height: 20px;
+    display: block-inline;
+    float: left;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: grey;
+    border: 1px solid black;
 }

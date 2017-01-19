@@ -4,11 +4,11 @@ const habitChild = require('./habitChild');
 
 var habitSchema = new Schema({
     name: String,
+    description: String,
     slug: {
         type: String,
-        unique: true
+        unqiue: true
     },
-    description: String,
     habitChildren: [habitChild]
 });
 

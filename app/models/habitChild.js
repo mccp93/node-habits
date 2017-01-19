@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const habitChildSchema = new Schema({
     date: String,
-    completed: Boolean,
+    completed: Boolean
 });
 
 module.exports =  habitChildSchema;

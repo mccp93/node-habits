@@ -1,4 +1,29 @@
-<div class="jumbotron text-center">
-    <h1><%= habit.name %></h1>
-    <p> <%= habit.description %> </p>
+<% if(success.length > 0) { %>
+    <div class="alert alert-success"> <%= success %> </div>
+<% } %>
+
+<div style="margin: 0 auto; width: 50%">
+<h1 style="text-align: center"> <%= habit.name %> </h1>
+<h4 style="text-align: center; color: grey"> <%= habit.description %> </h4>
+</div>
+<div class="jumbotron text-center" style="padding-top: 5px">
+        <div class="square-container">
+        <% for(var x = 0; x < habit.habitChildren.length; x++) { %>
+            <% if (habit.habitChildren[x].completed == true) {%>
+                <% if(x % 7 != 0) { %>
+                    <div class="square" id="<%= habit.name %>"> </div>
+                <% } else { %>
+                    <br style="clear: both"/>
+                    <div class="square" id="<%= habit.name %>"> </div>
+                <% } %>
+            <% }else{ %>
+                <% if(x % 7 != 0) { %>
+                    <div class="square-false"> </div>
+                <% } else { %>
+                    <br style="clear: both"/>
+                    <div class="square-false"> </div>
+                <% } %>
+            <% } %>
+        <% } %>
+        </div>
 </div>
